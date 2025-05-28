@@ -43,11 +43,6 @@ namespace ShopOwnerCore.Application_Core.Interface
 
         Task<int> CountAsync();
 
-      
-        
-
-       
-
         IEnumerable<T> Filter(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "", int? page=null, int? paseSize=null );
 
         bool Exist(Expression<Func<T, bool>> predicate);
